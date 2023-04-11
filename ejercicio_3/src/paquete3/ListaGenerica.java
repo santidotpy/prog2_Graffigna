@@ -44,8 +44,8 @@ public class ListaGenerica<T extends Comparable<T>> {
             return lista.get(position);
         } catch (IndexOutOfBoundsException e) {
             System.out.println("Error: " + e.getMessage());
-            // return null;
-            throw e;
+            return null;
+            //throw e;
         }
     }
 

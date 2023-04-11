@@ -12,6 +12,15 @@ public class App {
 
         ListaGenerica<Empleado> listaEmpleados = new ListaGenerica<Empleado>();
 
+        // Excepciones
+        System.out.println("Excepciones");
+        listaEmpleados.addToPosition(new Empleado("Jess", "Thomas", 444, 4), 88);
+        listaEmpleados.getPosition(88);
+        listaEmpleados.getFirst();
+        listaEmpleados.getLast();
+
+        System.out.println("--------------------------------------------------");
+
         // Agregar algunos empleados a la lista
         listaEmpleados.addToList(new Empleado("Nick", "Smith", 123, 5));
         listaEmpleados.addToList(new Empleado("Jim", "Johnson", 456, 2));
@@ -21,7 +30,7 @@ public class App {
         // Agregar un empleado al principio de la lista
         listaEmpleados.addFirst(new Empleado("Laura", "Olsen", 246, 4));
 
-        listaEmpleados.addToPosition(new Empleado("Jess", "Thomas", 444, 4), 88);
+        //listaEmpleados.addToPosition(new Empleado("Jess", "Thomas", 444, 4), 88);
         // Ordenar la lista por apellido
         listaEmpleados.sortList();
 
