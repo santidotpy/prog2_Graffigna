@@ -50,7 +50,6 @@ public class ListaGenerica<T extends Comparable<T>> {
     }
 
     public T getFirst() {
-        // if the list is empty, throw an exception
         try {
             return lista.get(0);
         } catch (IndexOutOfBoundsException e) {
