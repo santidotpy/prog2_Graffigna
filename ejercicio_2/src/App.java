@@ -29,20 +29,25 @@ public class App {
                     + empleado.getLegajo() + " - Años trabajados: " + empleado.getAniosTrabajados());
         }
 
+        System.out.println("--------------------------------------------------");
+
         // Remover el segundo empleado de la lista
         listaEmpleados.removePosition(1);
 
-        // Mostrar la lista de empleados después de remover el segundo empleado
+        // Mostrar la lista de empleados despues de remover el segundo empleado
         for (Empleado empleado : listaEmpleados.getList()) {
             System.out.println(empleado.getApellido() + ", " + empleado.getNombre() + " - Legajo: "
                     + empleado.getLegajo() + " - Años trabajados: " + empleado.getAniosTrabajados());
 
         }
+
+        System.out.println("--------------------------------------------------");
+
         // Obtener y mostrar el primer empleado de la lista
         Empleado primerEmpleado = listaEmpleados.getFirst();
         System.out.println("Primer empleado: " + primerEmpleado.getApellido() + ", " + primerEmpleado.getNombre());
 
-        // Obtener y mostrar el último empleado de la lista
+        // Obtener y mostrar el ultimo empleado de la lista
         Empleado ultimoEmpleado = listaEmpleados.getLast();
         System.out.println("Último empleado: " + ultimoEmpleado.getApellido() + ", " + ultimoEmpleado.getNombre());
     }
